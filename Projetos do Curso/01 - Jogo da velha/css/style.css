@@ -1,7 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
 
 body {
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  min-height: 100vh;
 }
 
 * {
@@ -11,4 +15,112 @@ body {
   font-family: "Poppins", sans-serif;
   list-style: none;
   text-decoration: none;
+}
+
+h1 {
+  font-size: 2.65rem;
+}
+
+#buttons-container button {
+  border: none;
+  padding: 0.625rem 0.9rem;
+  margin: 1.5rem 0.625rem 0;
+  cursor: pointer;
+}
+
+#container {
+  display: flex;
+  width: 300px;
+  margin: 2rem auto;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.box {
+  flex: 1 1 33%;
+  height: 100px;
+  border: 5px solid #000;
+}
+
+#block-1,
+#block-2,
+#block-3 {
+  border-top: none;
+}
+
+#block-1,
+#block-4,
+#block-7 {
+  border-left: none;
+}
+
+#block-3,
+#block-6,
+#block-9 {
+  border-right: none;
+}
+
+#block-7,
+#block-8,
+#block-9 {
+  border-bottom: none;
+}
+
+.x {
+  font-size: 65px;
+  color: red;
+  display: inline-block;
+  line-height: 100px;
+}
+
+.o {
+  width: 50px;
+  height: 50px;
+  border: 5px solid green;
+  border-radius: 50%;
+  display: inline-block;
+  margin-top: 17px;
+}
+
+.hide {
+  display: none !important;
+}
+
+#scoreboard-container {
+  font-weight: 700;
+  margin: 30px auto 0;
+  font-size: 25px;
+  position: relative;
+}
+
+.score-box {
+  margin: 0 20px;
+}
+
+#x-scoreboard {
+  color: red;
+  margin: 0 3px;
+}
+
+#o-scoreboard {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 3px solid green;
+  border-radius: 50%;
+  margin: 10px 3px 0;
+}
+
+#message p {
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 150px;
+  width: 500px;
+  font-size: 50px;
+  background: #151515;
+  color: #fff;
+  padding: 20px;
+  border-radius: 5px;
 }
