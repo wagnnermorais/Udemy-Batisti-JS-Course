@@ -6,6 +6,11 @@ body {
   justify-content: center;
   text-align: center;
   min-height: 100vh;
+  background-image: linear-gradient(
+    109.6deg,
+    rgba(102, 82, 121, 1) 11.2%,
+    rgba(62, 43, 80, 1) 91.1%
+  );
 }
 
 * {
@@ -18,14 +23,25 @@ body {
 }
 
 h1 {
-  font-size: 2.65rem;
+  font-size: 3rem;
+  color: #ffffffd9;
 }
 
 #buttons-container button {
-  border: none;
-  padding: 0.625rem 0.9rem;
+  padding: 0.625rem 1.75rem;
   margin: 1.5rem 0.625rem 0;
+  border: none;
+  border-radius: 5px;
+  background: #151515;
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 700;
+  transition: 0.25s;
   cursor: pointer;
+}
+
+#buttons-container button:hover {
+  background: #322a2a;
 }
 
 #container {
@@ -91,6 +107,10 @@ h1 {
   margin: 30px auto 0;
   font-size: 25px;
   position: relative;
+}
+
+.score-title {
+  color: #fff;
 }
 
 .score-box {
